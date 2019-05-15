@@ -1,0 +1,248 @@
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+	<title>nomor 2</title>
+	<style type="text/css">
+
+		body {
+			background-color: #fbf7ab;
+			 font-family: 'Open Sans', Arial, sans-serif;
+                font-weight: 700;
+		}
+
+		@font-face {
+			font-family: "woolwich";
+			src: url("woolwich.otf");
+		}
+
+		.grid-container {
+			position: top;
+			margin: 0 auto;	
+			border-style: solid;
+			background-color: #f6cb63;
+			background-image: url("bg.png");
+			background-size: 80vw;
+			width: 80vw;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-column-gap: 0;
+			grid-row-gap: 0;
+			padding: 3vw;
+			border-width: 0;			
+		}
+		.pilihan {
+			position: top;
+			border: 4px solid #ddac4e;
+			border-radius: 25px; 
+			margin: 0 auto;
+			margin-top: 50;
+			width: 90vw;
+			height: 25vw;
+			border-style: solid;
+			background-color: #ddac4e;
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			grid-column-gap: 0;
+			grid-row-gap: 0;
+			padding: 0.5vw;
+			border-width: 0;
+			align-items: center;
+			text-align: center;
+
+
+		}
+		img	{
+
+			width: 25vw;
+			padding: 0.5vw;
+			transition: all .1s ease-in-out;
+		}
+		img:hover{
+			transform: scale(1.1);
+		}
+
+		input	{
+
+			width: 80%;
+			transition: all .1s ease-in-out;
+		}
+		input:hover{
+			transform: scale(1.1);
+		}
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+.gambar7 {
+	animation: shadow-pulse 1s infinite;
+}
+
+	</style>
+<script src="jquerybaru.min.js"></script>
+	<script src="sweetalert2.js"></script>
+	<script src="script.js" ></script>
+	
+</head>
+<body>
+	        
+
+
+<br>
+		<div class="deskripsi" style="display: grid; border-radius: 25px; border: 4px solid #854442; width: 90vw; margin: 0 auto; color: #b77e31; font-size: 3.5vw ; font-family: woolwich; letter-spacing: 2; text-align: center; align-content: center; font-weight: bold; background-color: #64260c; padding-left: 2vw; padding-right: 2vw; height: 20vw">
+		
+	</div>
+	<br><br><br>
+<div  class="grid-container"  >
+	
+		  <div onclick="playThermometer()" class="gambar9"><img src="9a.png"></div>
+	 	  <div onclick="playComputer()"class="gambar8"><img src="8a.png"></div>
+		  <div onclick="playCalculator()"class="gambar7"><img src="2.png"></div>
+	
+		  <div onclick="playBag()"class="gambar6"><img src="y.png"></div>
+		  <div onclick="playCalendar()"class="gambar5"><img src="5a.png"></div>
+		  <div onclick="playPencil()"class="gambar4"><img src="4a.png"></div>
+
+		  <div onclick="playGlobe()"class="gambar3"><img src="3a.png"></div>
+		  <div onclick="playClock()"class="gambar2"><img src="2a.png"></div>
+		  <div onclick="playBook()"class="gambar1"><img src="1a.png"></div>
+
+</div>
+
+<div class="pilihan">
+		  <div class="pilihan1"><input onclick="cobalah1()" type="image" id="pilihan1" src="6a.png"></div>
+	 	  <div class="pilihan2"><input onclick="cobalah2()" type="image" id="pilihan2" src="1a.png"></div>
+		  <div class="pilihan3"><input onclick="cobalah3()" type="image" id="pilihan3" src="7a.png"></div>
+		  <div class="pilihan3"><input onclick="cobalah4()" type="image" id="pilihan4" src="10.png"></div>
+	
+</div>
+		<audio id="thermometer">
+			<source src="thermometer.mp3" type="audio/mpeg">
+			Your browser isn't invited for super fun audio time.
+		</audio>
+
+		<audio id="computer">
+			<source src="computer.mp3" type="audio/mpeg">
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		<audio id="calculator">
+			<source src="calculator.mp3" type="audio/mpeg">
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		<audio id="bag">
+			<source src="bag.mp3" type="audio/mpeg">
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		<audio id="calendar">
+			<source src="calendar.mp3" type="audio/mpeg">
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		<audio id="pencil">
+			<source src="pencil.mp3" type="audio/mpeg">
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		<audio id="globe">
+			<source src="globe.mp3" type="audio/mpeg">
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		<audio id="clock">
+			<source src="clock.mp3" type="audio/mpeg">
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		<audio id="book">
+			<source src="book.mp3" type="audio/mpeg">
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		
+
+<script type="text/javascript">
+var thermometer = document.getElementById("thermometer");
+  		function playThermometer() {
+    		thermometer.play();
+  		}
+
+	var computer = document.getElementById("computer");
+  		function playComputer() {
+    		computer.play();
+  		}
+
+	var calculator = document.getElementById("calculator");
+  		function playCalculator() {
+    		calculator.play();
+  		}
+  		
+	var bag = document.getElementById("bag");
+  		function playBag() {
+    		bag.play();
+  		}
+  		
+  	var calendar = document.getElementById("calendar");
+  		function playCalendar() {
+    		calendar.play();
+  		}
+  			
+	var pencil = document.getElementById("pencil");
+  		function playPencil() {
+    		pencil.play();
+  		}
+
+	var globe = document.getElementById("globe");
+  		function playGlobe() {
+    		globe.play();
+  		}
+
+	var clock = document.getElementById("clock");
+  		function playClock() {
+    		clock.play();
+  		}
+
+	var book = document.getElementById("book");
+  		function playBook() {
+    		book.play();
+  		}
+
+
+
+
+function cobalah1(){
+  			Swal.fire({
+  title: 'Zoonk!',
+  text: 'Do you want to try again?',
+  type: 'error',
+  confirmButtonText: '<a href="index.html">Yes Please</a>'
+})}
+
+  	  	function cobalah3(){
+  			Swal.fire({
+  title: 'Yasss!',
+  text: '',
+  type: 'success',
+  confirmButtonText: '<a href="soal3.html">Next Question</a>'
+})}		
+
+  			function cobalah2(){
+  			Swal.fire({
+  title: 'Zoonk!',
+  text: 'Do you want to try again?',
+  type: 'error',
+  confirmButtonText: '<a href="index.html">Yes Please</a>'
+
+})}
+
+  			function cobalah4(){
+  			Swal.fire({
+  title: 'Zoonk!',
+  text: 'Do you want to try again?',
+  type: 'error',
+  confirmButtonText: '<a href="index.html">Yes Please</a>'
+
+})}  			
+</script>
+</body>
+</html>
